@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TailOfSuffix</string>
+    <string name="notice">Notice:
+        Before starting tailing(renaming files), please backup files.When the app is uninstalled, the records of tailing will be cleared, which means that it cannot reverse renaming automatically.
+        Do not use any common suffix(eg: doc, png, txt, mp4,etc) as a tail, otherwise it will cause problems(this app is crude).
+    </string>
 </resources>

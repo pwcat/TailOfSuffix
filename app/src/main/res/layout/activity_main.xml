@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.pwcat.root.tailofsuffix.MainActivity"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center_horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,9 +14,10 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
         <TextView
+            android:id="@+id/path_et"
             android:layout_width="0dp"
             android:layout_weight="6"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="23sp"
             android:text="..." />
@@ -50,7 +51,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
-        android:text="Notice:
-        Before starting tailing(renaming files), please backup files.When the app is uninstalled, the records of tailing will be cleared."/>
+        android:text="@string/notice"/>
+    <TextView
+        android:id="@+id/err_tv"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
